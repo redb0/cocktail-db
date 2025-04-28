@@ -1,0 +1,55 @@
+[project]
+name = "cocktails"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Voronov Vladimir", email = "vladimir.svoronov@gmail.com"},
+]
+dependencies = [
+  "fastapi>=0.115.4",
+  "sqlmodel>=0.0.22",
+  "inflection>=0.5.1",
+  "uvicorn>=0.32.0",
+  "pydantic-settings>=2.6.1",
+  "psycopg>=3.2.3",
+  "pillow>=11.0.0",
+  "python-fasthtml>=0.9.1",
+  "monsterui>=1.0.19",
+]
+requires-python = "==3.11.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[dependency-groups]
+lint = ["ruff>=0.7.3", "mypy>=1.13.0"]
+dev = [
+    "commitizen>=4.6.0",
+]
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+tag_format = "$version"
+version_scheme = "pep440"
+version_provider = "pep621"
+update_changelog_on_bump = true
+major_version_zero = true
+version_files = [
+    "src/__init__.py",
+]
+
+[tool.ruff]
+src = ["src"]
+
+
+[tool.mypy]
+python_version = "3.11"
+plugins = [
+  "pydantic.mypy"
+]
+mypy_path = "src/"
+
+[tool.pdm]
+distribution = false
+
+
