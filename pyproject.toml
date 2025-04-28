@@ -49,6 +49,10 @@ plugins = [
 ]
 mypy_path = "src/"
 
+[[tool.mypy.overrides]]
+module = ["fasthtml.*"]
+ignore_missing_imports = true
+
 [tool.pdm]
 distribution = false
 
