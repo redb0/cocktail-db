@@ -9,6 +9,10 @@
 
 ## Зависимости
 
+- Python 3.11
+- PDM
+- HTMX
+
 ## Развертывание
 
 ## TODO
@@ -28,3 +32,7 @@
 - [ ] Приятные стили
 - [ ] docker-compose
 - [ ] Применить шаблон fastapi приложения
+
+## Полезные ссылки
+
+- [Больше примеров по `FastHTML`](https://github.com/AnswerDotAI/fasthtml-example)
