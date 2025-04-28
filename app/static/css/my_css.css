@@ -1,0 +1,22 @@
+[data-theme=light],
+:root:not([data-theme=dark]),
+:host(:not([data-theme=dark])) {
+    --pico-primary-background: var(--pico-color-grey-500);
+    --pico-primary-border: var(--pico-primary-background);
+    --pico-primary-hover-background: var(--pico-color-grey-600);
+    --pico-primary-hover-border: var(--pico-primary-hover-background);
+}
+
+.delete {
+    --pico-primary-background: var(--pico-color-red-500);
+    --pico-primary-border: var(--pico-primary-background);
+    --pico-primary-hover-background: var(--pico-color-red-600);
+    --pico-primary-hover-border: var(--pico-primary-hover-background);
+}
+
+.add {
+    --pico-primary-background: var(--pico-color-blue-500);
+    --pico-primary-border: var(--pico-primary-background);
+    --pico-primary-hover-background: var(--pico-color-blue-600);
+    --pico-primary-hover-border: var(--pico-primary-hover-background);
+}
